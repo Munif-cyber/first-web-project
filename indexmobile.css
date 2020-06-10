@@ -46,13 +46,16 @@ html{
 #menu-close {
     display: none;
 }
-#menu-close .open {
+#menu-close.open {
     display: flex;
 }
-#menu .open{
+#menu.open{
     display: none;
 }
 #menu{
+    cursor: pointer;
+}
+#menu-close{
     cursor: pointer;
 }
 h1{
@@ -89,7 +92,7 @@ list-style-type: none;
 display:none ;
 flex-direction: column;
 position: absolute;
-background-color: black;
+background-color: #077054;
 top: 90px;
 width: 90%;
 opacity: 0.9;
@@ -97,26 +100,16 @@ padding: 0px;
 margin: 0px 05%;
 flex-wrap: wrap;
 justify-content: center;
+z-index: 3;
 /* border: 2px solid white; */
 /* position: relative;
 left: auto; */
 
 }
 
-ul .open{
+ul.open{
 display: flex;
-list-style-type: none;
-display:none ;
-flex-direction: column;
-position: absolute;
-background-color: black;
-top: 90px;
-width: 90%;
-opacity: 0.9;
-padding: 0px;
-margin: 0px 05%;
-flex-wrap: wrap;
-justify-content: center;
+
 }
 
 ul li{
@@ -127,6 +120,7 @@ flex-direction: column;
 /* padding: 20px 40px 09px; */
 font-size: 17px;
 font-weight: lighter;
+border: white solid 1px;
 
 }
 .active a,.active.inst a{
@@ -139,24 +133,24 @@ font-weight: lighter;
     
 }
 .active{
-    background: #99fa99 ;
+    background: #99fa99b9 ;
     color: blue;
     padding: 20px 40px 09px;
 }
 
 .about:hover{
-    background: black ;
+    background: #077054 ;
     color: white;
 }
 
 .about a{
    outline: none; 
-   color: #b6d8cf;
+   color: white;
    text-decoration: none;
    padding: 20px 40px 09px;
 }
 .about a:hover{
-    background:#697e69 ;
+    background:#99fa99b9;
     color:white !important;
     padding: 20px 40px 09px;
     /* width: 100%; */

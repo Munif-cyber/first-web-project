@@ -1,7 +1,10 @@
 const menu = document.querySelector("#menu");
+const mobileMenu = document.querySelector(".mobile-menu");
 const menuClose=document.querySelector("#menu-close");
 const ul = document.querySelector("ul");
 
-menu.addEventListener("click", function(){
+mobileMenu.addEventListener("click", function(){
 ul.classList.toggle("open");
+menuClose.classList.toggle("open");
+menu.classList.toggle("open");
 });
