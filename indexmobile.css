@@ -43,8 +43,17 @@ html{
     background: black;
 
 }
-#menu-close{
+#menu-close {
     display: none;
+}
+#menu-close .open {
+    display: flex;
+}
+#menu .open{
+    display: none;
+}
+#menu{
+    cursor: pointer;
 }
 h1{
     text-align: center;
@@ -77,7 +86,8 @@ margin: 0px;
 ul {
 /* text-align: left; */
 list-style-type: none;
-display: ;
+display:none ;
+flex-direction: column;
 position: absolute;
 background-color: black;
 top: 90px;
@@ -92,8 +102,26 @@ justify-content: center;
 left: auto; */
 
 }
+
+ul .open{
+display: flex;
+list-style-type: none;
+display:none ;
+flex-direction: column;
+position: absolute;
+background-color: black;
+top: 90px;
+width: 90%;
+opacity: 0.9;
+padding: 0px;
+margin: 0px 05%;
+flex-wrap: wrap;
+justify-content: center;
+}
+
 ul li{
 display: flex;
+flex-direction: column;
 /* text-align: left; */
 /* background: red; */
 /* padding: 20px 40px 09px; */
@@ -103,7 +131,7 @@ font-weight: lighter;
 }
 .active a,.active.inst a{
     color:white;
-    background: #99fa99;
+    /* background: #99fa99; */
     height: ;
     width: 100%;
     outline: none;
@@ -117,9 +145,10 @@ font-weight: lighter;
 }
 
 .about:hover{
-    background: #99fa99 ;
+    background: black ;
     color: white;
 }
+
 .about a{
    outline: none; 
    color: #b6d8cf;
@@ -130,26 +159,34 @@ font-weight: lighter;
     background:#697e69 ;
     color:white !important;
     padding: 20px 40px 09px;
-    width: 100%;
+    /* width: 100%; */
     outline: none;
     
 }
 .about ul {
     display: none;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
 	left: 0;
 	list-style: none outside none;
 	margin: 0;
 	padding: 0px;
-	position: static;
+    position: static;
+    width: 100%;
     /* top: 14.5rem;
     left: 34%; */
-    background: brown;
+    /* background: brown; */
 }
+/* .about ul li{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
 .about.classes:hover ul  {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
     
 }
 /* .about ul li {
@@ -180,6 +217,10 @@ font-weight: lighter;
     padding: 10px 30px;
     display: flex;
 }
+
+
+
+
 
 div.rectangle{
     box-sizing: content-box;
