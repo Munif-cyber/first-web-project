@@ -38,6 +38,9 @@ html{
 .mobile-menu{
     display: none;
 }
+.mobile-ex{
+    display: none;
+}
 h1{
     text-align: center;
     font-family: 'lato-regular';
@@ -238,7 +241,7 @@ h2{
 .heade{
     font-size: 1.3rem;
     font-family: 'nixie_oneregular';
-    background: blue;
+    /* background: blue; */
     margin: 0px;
 }
 

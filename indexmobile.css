@@ -107,6 +107,7 @@ left: auto; */
 
 }
 
+
 ul.open{
 display: flex;
 
@@ -157,7 +158,7 @@ border: white solid 1px;
     outline: none;
     
 }
-.about ul {
+.about ul, .active ul {
     display: none;
     /* flex-direction: column;
     flex-wrap: wrap; */
@@ -169,19 +170,67 @@ border: white solid 1px;
     width: 100%;
     /* top: 14.5rem;
     left: 34%; */
-    /* background: brown; */
+    background: brown;
 }
 /* .about ul li{
     display: flex;
     flex-direction: column;
     width: 100%;
 } */
-.about.classes:hover ul  {
-    display:flex;
+.about.classes:hover ul,
+.active.classes:hover ul {
+    display:none;
     flex-direction: column;
     flex-wrap: wrap;
     /* width: 100%; */
     
+}
+/* .classes {
+    display: flex;
+    flex-direction: row;
+    
+}
+.classes:hover{
+    display: flex;
+    flex-direction: column;
+}
+
+.classes a {
+    width: 100%;
+}
+.classes a:hover{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+.about.classes ul.expand,
+.active.classes ul.expand  {
+    display:flex;
+    background:#114b3b;
+    
+    
+}
+.classes ul li{
+    border-bottom: none;
+}
+
+.mobile-ex{
+    /* background: blue; */
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    cursor: pointer;
+    border-left: white solid .5px;
+    height: 50px;
+}
+#expand.expand{
+    display: none;
+}
+#collapse.expand{
+    display: flex;
+}
+#collapse{
+    display: none;
 }
 /* .about ul li {
     background:#077054;;
@@ -193,23 +242,32 @@ border: white solid 1px;
 
 .active ul {
     display: none;
-	left: 0;
-	list-style: none outside none;
+    flex-direction: column;
+	/* list-style: none outside none; */
 	margin: 0;
 	padding: 0px;
-	position: absolute;
-    top: 14.5rem;
-    left: 34%;
+	
     /* background: brown; */
 }
-.active.classes:hover ul {
-    display:flex;
+/* .active.classes ul li{
+    background: brown !important;
+}
+.active.classes ul {
+    background:black ;
+    
+}
+
+.active.classes:hover{
+    background: purple;
+} */
+.active.classes.expand:hover ul {
+    display:none;
     
 }
 .active ul li a {
-    background:#077054;;
+    background:#077054;
     padding: 10px 30px;
-    display: flex;
+    /* display: flex; */
 }
 
 
