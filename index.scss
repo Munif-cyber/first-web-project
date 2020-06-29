@@ -1,0 +1,471 @@
+
+/* -----------------------------------------
+    CSS specified defaults
+   -----------------------------------------
+*/
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    word-wrap: break-word;
+}
+
+@media only screen and (min-width:718px){
+    body{
+        width: 100%;
+        background: #077054;
+        color: #315f52;
+        padding: 0px;
+        margin: 0px;
+        // font-size: 14px;
+        font-family: 'lato-regular';
+        font-weight: lighter;
+    }
+    @font-face{
+        font-family: 'lato-regular';
+        src: url('./lato-regular-webfont.ttf');
+        font-weight: lighter;
+    }
+    @font-face {
+        font-family: 'nixie_oneregular';
+        src: url('./nixieone-regular-webfont.ttf');
+    }
+    html{
+        width: 100%;
+    }
+    
+    /* -----------------------------------------
+        This is for header 
+       -----------------------------------------
+    */
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-ex{
+        display: none;
+    }
+    h1{
+        text-align: center;
+        font-family: 'lato-regular';
+        color:  #99fa99;
+        padding: 30px 0px 0px;
+        margin: 0px 0px;
+        font-size: 5rem;
+        line-height: 3.5rem;
+        font-weight: lighter;
+        
+        /* background-color: pink; */
+    }
+    h3{
+    text-align: center;
+    font-family: 'nixie_oneregular';
+    font-weight: lighter;
+    font-size: 2.6rem;
+    color:  #b6d8cf;
+    padding: 07px 0px 20px;
+    margin: 0px;
+    
+    
+    }
+    /* nav ul{
+        align-self : center;
+    } */
+    
+    ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px 16%;
+    
+    
+    }
+    ul li{
+    display: inline-flex;
+    padding: 20px 0px 09px;
+    font-size: 2rem;
+    font-weight: lighter;
+    
+    }
+    .active a,.active.inst a{
+        color:#99fa99;
+        outline: none;
+        text-decoration: none;
+        
+    }
+    
+    .about a{
+       outline: none; 
+       color: #b6d8cf;
+       text-decoration: none;
+    }
+    .about a:hover{
+        color:#d3a3ff;
+        outline: none;
+        
+    }
+    .about ul {
+        display: none;
+        left: 0;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0px;
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%,-28%);
+        /* background: brown; */
+    }
+    .about.classes:hover ul {
+        display:flex;
+        
+    }
+    .about ul li {
+        background:#077054;
+        padding: 10px 30px;
+        display: flex;
+    }
+    
+    
+    
+    .active ul {
+        display: none;
+        left: 0;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0px;
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        /* background: brown; */
+    }
+    .active.classes:hover ul {
+        display:flex;
+        
+    }
+    .active ul li {
+        background:#077054;;
+        padding: 10px 30px;
+        display: flex;
+    }
+    
+    div.rectangle{
+        box-sizing: content-box;
+        background: white;
+        padding: 40px 0px;
+        margin: 0% 10%;
+        min-height: 827px;
+    
+    }
+    
+    /* -----------------------------------------
+        This is for homepage
+       -----------------------------------------
+    */
+    .yoga{
+        display: flex;
+        flex-direction: column;
+        // border: 3px solid; 
+        width: 70%;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center; 
+        align-items: center;  
+        z-index: 3;
+        
+    }
+    
+    .yogs{
+        flex: 1;
+        padding: 5px;
+    
+    }
+    
+    .purple{
+        background: #d3a3ff;
+        flex:1;
+        width: 40%;
+        height: 2%;
+        margin: auto;
+        /* border: 2px solid; */
+    }
+    
+    .better{
+        flex:1;
+        order:1;
+        /* border: 2px solid; */
+    }
+    
+    h2{
+        text-align: center;
+        font-family: 'nixie_oneregular';
+        font-size: 10rem;
+        text-align: center;
+        color: #21a51e;
+        font-weight: lighter;
+    
+    }
+    
+    .imageyoga{
+        width: 30%;
+        background: url('./lady-in-yoga.jpg');
+        background-repeat: no-repeat;
+        height: auto;
+        display: flex;
+        flex-flow: row-reverse;
+        padding: 30px;
+        margin: 0px;
+        // img{
+        //     width: 100%;
+        //     height: auto;
+        // }
+        
+    }
+    
+    
+    /* -----------------------------------------
+        This is for about 
+       -----------------------------------------
+    */
+    .heade{
+        font-size: 1.3rem;
+        font-family: 'nixie_oneregular';
+        margin: 0px;
+    }
+    
+    .imageyogaa{
+        display: flex;
+        justify-content: center;
+        // width: 100%;
+        height: auto;
+        margin: auto;
+        // border:5px red solid;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+    /* -----------------------------------------
+        This is for classes 
+       -----------------------------------------
+    */
+    .class{
+        width: 100%;
+        /* background: brown; */
+        margin: 0px 0px 0px;
+        font-size: 2rem;
+        justify-self: center;
+        display: flex;
+    }
+    
+    .classtime{
+        margin: 0px 0px 0px 50px;
+        line-height: 30px;
+        /* background: #99fa99; */
+        width: 50%;
+    }
+    
+    .imageyogaa{
+        width: auto;
+        margin: 0px 20px;
+    }
+    .classhead{
+        
+        font-size: 2.3rem;
+        font-family: 'nixie_oneregular';
+        /* background: blue; */
+        padding: 0px;
+        margin: 0px 0px 0px 50px;
+    }
+    
+    .head{
+        font-size: 1.7rem;
+        font-family: 'nixie_oneregular';
+        /* background: black; */
+    }
+    
+    /* -----------------------------------------
+        This is for instructors 
+       -----------------------------------------
+    */
+    #instructors{
+        margin: 0px 0px 0px 50px;
+        line-height: 30px;
+        /* background: #99fa99; */
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    figure{
+        /* height: 200px; */
+        margin: 0px 30px;
+        /* background: blue; */
+        row-gap: 2px ;
+    }
+    figcaption{
+        text-align: center;
+        font-family: 'nixie_oneregular';
+        font-size: 2rem;
+        /* background: red; */
+    }
+    figure img{
+        margin: 0px;
+        background: yellow;
+        /* row-gap: 2px; */
+    }
+    
+    /* -----------------------------------------
+        This is for contacts 
+       -----------------------------------------
+    */
+    .inquiries{
+        display: flex;
+        justify-content: center;
+        padding: 8% 0px 0px;
+        /* background: blue; */
+        
+    }
+    form{
+        
+        /* background: black; */
+        font-size: 2rem;
+        flex-basis: 80%;
+        height: 70%;
+        padding: 0px 0px 0px 0px;
+        
+           
+    }
+    input{
+        height: 40px;
+        width: 100%;
+        background: #d1d3d4;
+        border: none;
+        border-radius: 3px;
+        margin: 10px 0px;
+    }
+    
+    #message{
+        height: 222px;
+        border: none;
+        border-radius: 7px;
+        width: 100%;
+        background: #d1d3d4;
+    }
+    button{
+        // position: relative;
+        // left: 89%;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        border-radius: 6px;
+    }
+    .submit{
+        background: #077054;
+        color: #b6d8cf;
+        padding: 0px px;
+        border-radius: 6px;
+        font-size: 1.4rem;
+    }
+    .submit:hover{
+        background: #d3a3ff;
+        color: black;
+    }
+    
+    /* -----------------------------------------
+        This is for blog
+       -----------------------------------------
+    */
+    
+    .blog{
+        /* background: brown; */
+        display: flex;
+        margin: 0px;
+        /* padding: 10% 0px; */
+        flex-direction: column;
+        align-content: space-around;
+        /* height: 720px; */
+        
+    }
+    .blog1{
+        /* background: black; */
+        display: flex;
+        flex-basis: 100%;
+        margin: 50px 0px;
+        margin-right: 5%;
+        font-size: 3.5rem;
+       
+    }
+    .blog1 img{
+        
+        padding: 0px;
+        margin:0px;
+        /* flex-basis: 30%; */
+        margin: 0px 0px 0px 50px;
+    }
+    div.blogtext1{
+        /* background: pink; */
+        flex-basis: 60%;
+        margin: 0px 0px 0px 20px;
+        
+    }
+    
+    
+    
+    /* -----------------------------------------
+        This is for footer
+       -----------------------------------------
+    */
+    
+    .foot{
+        /* box-sizing: content-box; */
+        /* background: blue; */
+        margin: 2% 10% 20vh;
+        display: flex;
+        font-family: 'lato-regular';
+        color:  #99fa99;
+        font-weight: lighter;
+        
+    }
+    .foot div{
+        /* border: 2px solid; */
+        padding: 3px;
+    }
+    div.location{
+        flex-basis: 70%;
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+    div.location span{
+        font-size:1.1rem;
+        font-weight: normal;
+        color: #b6d8cf;
+    }
+    div.icon{
+        flex-basis:30%;
+        display: flex;
+        justify-content: flex-end;
+        /* background: black; */
+        align-items: center;
+        font-family: 'lato-regular';
+        color:  #99fa99;
+    }
+    
+    .icon .remo{
+        margin: 0px 13px;
+    }
+    .remo{
+    text-decoration: none;
+    outline: none;
+    /* background: black; */
+    padding: 0px;
+    }
+    
+    
+    }
+    
+    

@@ -1,0 +1,640 @@
+
+
+
+/* -----------------------------------------
+    CSS specified defaults
+   -----------------------------------------
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-size: 62.5%;
+    
+}
+@media only screen and (max-width:718px){
+body{
+    width: 100%;
+    background: #077054;
+    color: #315f52;
+    font-size: 6rem;
+    font-family: 'lato-regular';
+    font-weight: lighter;
+}
+@font-face{
+    font-family: 'lato-regular';
+    src: url('./lato-regular-webfont.ttf');
+    font-weight: lighter;
+}
+@font-face {
+	font-family: 'nixie_oneregular';
+    src: url('./nixieone-regular-webfont.ttf');
+}
+html{
+    width: 100%;
+}
+
+/* -----------------------------------------
+    This is for header 
+   -----------------------------------------
+*/
+.mobile-menu{
+    position: absolute;
+    right: 0.625rem;
+    top: 40px;
+    margin-right:4%;
+
+}
+#menu-close {
+    display: none;
+}
+#menu-close.open {
+    display: flex;
+}
+#menu.open{
+    display: none;
+}
+#menu{
+    cursor: pointer;
+}
+#menu-close{
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font-family: 'lato-regular';
+    color:  #99fa99;
+    padding: 30px 0px 0px;
+    margin: 0px 0px;
+    margin-top: 70px;
+    font-size: 5rem;
+    line-height: 50px;
+    font-weight: lighter;
+    /* background-color: pink; */
+}
+h3{
+text-align: center;
+font-family: 'nixie_oneregular';
+font-weight: lighter;
+font-size: 2.6rem;
+color:  #b6d8cf;
+padding: 07px 0px 20px;
+margin: 0px;
+
+
+}
+
+ul {
+/* text-align: left; */
+list-style-type: none;
+display:none ;
+flex-direction: column;
+position: absolute;
+background-color: #077054;
+top: 9rem;
+width: 90%;
+opacity: 0.9;
+padding: 0px;
+margin: 0px 05%;
+flex-wrap: wrap;
+justify-content: center;
+z-index: 10;
+
+}
+
+
+ul.open{
+display: flex;
+
+}
+
+ul li{
+display: flex;
+flex-direction: column;
+width: 100%;
+flex-wrap: wrap;
+font-size: 2.4rem;
+font-weight: lighter;
+border: white solid 1px;
+
+}
+.active a,.active.inst a{
+    color:white;
+    height: auto;
+    width: 100%;
+    outline: none;
+    text-decoration: none;
+    
+}
+.active{
+    
+    background: #99fa99b9 ;
+    /* color: blue; */
+    padding: 20px 40px 09px;
+}
+.active.classes ul{
+    /* background: blue !important; */
+    width:  100%!important;
+    /* height: 20px; */
+    position: relative;
+    top: 0rem;
+    left: -4rem;
+    // clear: right;
+}
+.active.classes li{
+    /* background: red; */
+    width: 100%;
+    height: 3rem;
+}
+.active.inst{
+    height: 3.375rem !important;
+    /* background: blue; */
+}
+.about.inst,.active.inst{
+    height:5rem;
+}
+.active.inst a{
+    /* background: black; */
+    width: 100%;
+    position: absolute;
+    top: 13.5rem;
+    left:0px;
+    margin: 0px;
+}
+.about.inst a{
+    width: 100%;
+    position: static;
+    top: 0px;
+    left:0px;
+    // margin: 0px;
+    padding: 1.25rem 3.75rem;
+    padding-right: 0px;
+}
+.about.inst a:hover{
+    padding: 0.9375 3.75rem;
+    padding-right: 0px;
+}
+
+
+.about:hover{
+    background: #077054 ;
+    color: white;
+}
+
+.about a{
+   outline: none; 
+   color: white;
+   text-decoration: none;
+   padding: 20px 40px 09px;
+}
+.about a:hover{
+    background:#99fa99b9;
+    color:white !important;
+    padding: 20px 40px 09px;
+    //  width: 100%;
+    outline: none;
+    
+}
+.about ul, .active ul {
+    display: none;
+	left: 0;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0px;
+    position: static;
+    width: 100%;
+}
+
+.about.classes:hover ul,
+.active.classes:hover ul {
+    display:none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    
+}
+
+.about.classes ul.expand,
+.active.classes ul.expand  {
+    display:flex;
+    background:#114b3b;
+    
+    
+}
+.classes ul li{
+    border-bottom: none;
+}
+
+.mobile-ex{
+    /* background: blue; */
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    cursor: pointer;
+    border-left: white solid .5px;
+    height: 50px;
+    
+    
+}
+#expand.expand{
+    display: none;
+}
+#collapse.expand{
+    display: flex;
+}
+#collapse{
+    display: none;
+}
+
+
+
+.active ul {
+    display: none;
+    flex-direction: column;
+	margin: 0;
+	padding: 0px;
+}
+
+.active.classes.expand:hover ul {
+    display:none;
+}
+.active ul li a {
+    background:#077054;
+    padding: 10px 30px;
+}
+
+
+
+
+
+div.rectangle{
+    box-sizing: content-box;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    min-height: 827px;
+    // width: ;
+    margin: 0px 5%;
+    /* display: flex; */
+
+}
+
+/* -----------------------------------------
+    This is for homepage
+   -----------------------------------------
+*/
+.yoga{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid; */
+    width: 100%;
+    padding: 0px 2%;
+    margin: 0px;
+    /* flex-wrap: wrap; */
+    /* background: yellow; */
+    justify-content: center ;   
+    /* background: pink; */
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.yogs{
+    flex: 1;
+    /* border: 2px solid; */
+    /* order: 3; */
+    padding: 5px;
+
+}
+
+.purple{
+    background: #d3a3ff;
+    flex:1;
+    /* order:2; */
+    width: 30%;
+    height: 1rem;
+    position: relative;
+    left:34%;
+    top: 30px ;
+}
+
+.better{
+    flex:1;
+    order:1;
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'nixie_oneregular';
+    font-size: 10rem;
+    text-align: center;
+    color: #21a51e;
+    font-weight: lighter;
+    margin: 0px;
+    z-index: 3;
+
+}
+
+.imageyoga{
+    width: 70%;
+    background: url('./lady-in-yoga.jpg');
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    padding: 0px 50px;
+    margin: auto;
+    // border: 5px solid black;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width:480px){
+    .imageyoga{
+    width:100%;
+    margin-top: 20px;
+    }
+}
+
+
+/* -----------------------------------------
+    This is for about 
+   -----------------------------------------
+*/
+.heade{
+    font-size: 1.5rem;
+    font-family: 'nixie_oneregular';
+    margin: 0px;
+}
+.class{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+    margin: 0px ;
+   
+}
+.classtime{
+    width: 100%;
+    line-height: 30px;
+    padding: 0px;
+    margin: 0px 20px;
+    
+}
+
+
+/* -----------------------------------------
+    This is for classes 
+   -----------------------------------------
+*/
+
+.imageyogaa{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    // border:5px red solid;
+    img{
+        width: 70%;
+        height: auto;
+    }
+    
+}
+@media(max-width:480px){
+    .imageyogaa{
+    width:100%;
+    
+    }
+}
+.classhead{
+    font-size: 2.3rem;
+    font-family: 'nixie_oneregular';
+    padding: 0px;
+    margin: 0px 0px 0px 20px;
+    // background: red;
+    
+}
+
+.head{
+    font-size: 1.6rem;
+    font-family: 'nixie_oneregular';
+    //  background: black; 
+}
+
+/* -----------------------------------------
+    This is for instructors 
+   -----------------------------------------
+*/
+#instructors{
+    margin: 5% 2%;
+    line-height: 30px;
+    /* background: #99fa99; */
+    justify-content:center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+      
+}
+#instructors1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#instructors2{
+    display: flex;
+    flex-direction: row;
+    
+}
+figure{
+    /* height: 200px; */
+    margin: 0px 2%;
+    width: 100%;
+    
+}
+figcaption{
+    text-align: center;
+    font-family: 'nixie_oneregular';
+    font-size: 1.3rem;
+    /* background: red; */
+}
+figure img{
+    width:100%;
+    height: auto;
+   
+   
+}
+
+/* -----------------------------------------
+    This is for contacts 
+   -----------------------------------------
+*/
+.inquiries{
+    display: flex;
+    justify-content: center;
+    padding: 8% 0px 0px;
+    margin: 10px;
+    
+}
+form{
+    // display: flex;
+    // flex-direction: column;
+    /* background: black; */
+    font-size: 2rem;
+    flex-basis: 400px;
+    height: 70%;
+    padding: 0px 0px 0px 0px;
+    
+       
+}
+input{
+    height: 40px;
+    width: 100%;
+    background: #d1d3d4;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+}
+
+#message{
+    height: 222px;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    background: #d1d3d4;
+}
+button{
+    // position: relative;
+    // left: 70%;
+    float: right;
+    margin: auto;
+    padding: 0px;
+    border:0px;
+    border-radius: 6px;
+}
+.submit{
+    background: #077054;
+    color: #b6d8cf;
+    padding: 0px px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    z-index: 3;
+}
+.submit:hover{
+    background: #d3a3ff !important;
+    color: black;
+}
+
+/* -----------------------------------------
+    This is for blog
+   -----------------------------------------
+*/
+
+.blog{
+    /* background: brown; */
+    display: flex;
+    margin: 0px;
+    /* padding: 10% 0px; */
+    flex-direction: column;
+    /* align-content: space-around; */
+    /* height: 720px; */
+    
+}
+.blog1{
+    /* background: black; */
+    display: flex;
+    flex-basis: 100%;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    /* background: blue; */
+
+    
+    /* justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start; */
+   
+}
+.blog1 img{
+    
+    padding: 0px;
+    margin:0px;
+    /* flex-basis: 30%; */
+    margin: 0px 20px 0px 20px;
+    width: 100%;
+    height: auto;
+}
+div.blogtext1{
+    /* background: pink; */
+    flex-basis: 100%;
+    margin: 0px 20px 0px 20px;
+    font-size: 2rem;
+    word-wrap: break-word;
+    
+}
+
+
+
+/* -----------------------------------------
+    This is for footer
+   -----------------------------------------
+*/
+
+.foot{
+    /* box-sizing: content-box; */
+    /* background: blue; */
+    margin: 0px 5% 10vh;
+    display: flex;
+    font-family: 'lato-regular';
+    color:  #99fa99;
+    font-weight: lighter;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+
+div.location{
+    flex-basis: 100%;
+    font-size: 4rem;
+    font-weight: normal;
+    margin-top: 20px;
+}
+div.location span{
+    font-size:1.3rem;
+    font-weight: normal;
+    color: #b6d8cf;
+}
+div.icon{
+    flex-basis:100%;
+    display: flex;
+    justify-content: flex-end;
+    /* background: black; */
+    align-items: center;
+    font-family: 'lato-regular';
+    color:  #99fa99;
+    margin-top: 20px;
+}
+
+.icon .remo{
+    margin: 0px 13px;
+}
+.remo{
+text-decoration: none;
+outline: none;
+/* background: black; */
+padding: 0px;
+}
+
+}
+
